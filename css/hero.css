@@ -1,0 +1,49 @@
+/* ════════════════════════════════════════
+   HERO — Sección de inicio:
+   layout 2 columnas, título, imagen
+   ════════════════════════════════════════ */
+
+#inicio {
+  background: linear-gradient(135deg, #fff8f0 0%, #fff3e6 100%);
+  padding: 5rem 2rem;
+}
+
+.hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--gray-dark);
+  margin-bottom: 1.25rem;
+}
+
+/* "Mexicalense" en naranja */
+.hero-text h1 span { color: var(--orange); }
+
+.hero-text p {
+  font-size: 1.15rem;
+  color: var(--gray);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(255,140,0,0.25);
+  object-fit: cover;
+}

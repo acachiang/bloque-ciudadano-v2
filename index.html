@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bloque Ciudadano Mexicalense</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- Estilos — un archivo por sección para fácil mantenimiento -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/evento.css" />
+  <link rel="stylesheet" href="css/cartelera.css" />
+  <link rel="stylesheet" href="css/form.css" />
+  <link rel="stylesheet" href="css/terms.css" />
+  <link rel="stylesheet" href="css/comunidad.css" />
+  <link rel="stylesheet" href="css/contacto.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+<!-- ════ NAVBAR ════ -->
+<nav>
+  <div class="nav-inner">
+    <a href="#inicio" class="nav-logo">🇲🇽 Bloque Ciudadano</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#evento">Evento</a></li>
+      <li><a href="#cartelera">Próximos</a></li>
+      <li><a href="#registro">Registro</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#registro" class="btn-nav">Registrarme</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ════ HERO ════ -->
+<section id="inicio">
+  <div class="hero-inner">
+    <div class="hero-text fade-in">
+      <h1>Bloque Ciudadano<br><span>Mexicalense</span></h1>
+      <p>Ciudadanos organizados por un Mexicali más próspero, transparente y democrático.</p>
+      <a href="#registro" class="btn-primary">Regístrate ahora</a>
+    </div>
+    <div class="hero-image fade-in">
+      <img src="https://www.bloqueciudadanomxli.org/octavio_bloque_nuevo.jpeg" alt="Octavio Sandoval - Bloque Ciudadano" />
+    </div>
+  </div>
+</section>
+
+<!-- ════ EVENTO ACTUAL ════ -->
+<section id="evento">
+  <div class="evento-inner">
+    <div class="section-header fade-in">
+      <h2>Próxima <span>Reunión</span></h2>
+      <div class="underline"></div>
+    </div>
+    <div class="evento-grid">
+      <div class="evento-img fade-in">
+        <img src="https://www.bloqueciudadanomxli.org/octavio_bloque_nuevo.jpeg" alt="Próximo evento Bloque Ciudadano" />
+      </div>
+      <div class="evento-details fade-in">
+        <span class="evento-badge">⚠️ Cupo limitado</span>
+        <h3>Conferencia con Octavio Sandoval</h3>
+
+        <div class="detail-card">
+          <div class="icon">🎙️</div>
+          <div class="content">
+            <strong>Conferencista</strong>
+            <p>Octavio Sandoval — Presidente CCE Baja California</p>
+          </div>
+        </div>
+
+        <div class="detail-card">
+          <div class="icon">📍</div>
+          <div class="content">
+            <strong>Ubicación</strong>
+            <p>Sala Gustavo Vildósola, CETYS Universidad, Mexicali, BC</p>
+          </div>
+        </div>
+
+        <div class="detail-card">
+          <div class="icon">📅</div>
+          <div class="content">
+            <strong>Fecha</strong>
+            <p>16 de abril de 2026</p>
+          </div>
+        </div>
+
+        <div class="detail-card">
+          <div class="icon">🕒</div>
+          <div class="content">
+            <strong>Horario</strong>
+            <p>6:15 pm Registro &nbsp;|&nbsp; 6:30 pm Inicio</p>
+          </div>
+        </div>
+
+        <a href="#registro" class="btn-primary" style="margin-top:1.5rem; display:inline-block;">Reservar mi lugar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ CARTELERA ════ -->
+<section id="cartelera">
+  <div class="section-header fade-in">
+    <h2>Próximos <span>Bloques</span></h2>
+    <div class="underline"></div>
+  </div>
+  <div class="cards-grid">
+
+    <div class="event-card fade-in">
+      <div class="card-banner">🏛️</div>
+      <div class="card-body">
+        <h3>Próximo Evento</h3>
+        <p>Foro ciudadano con representantes del Ayuntamiento de Mexicali. Participa y haz escuchar tu voz.</p>
+        <span class="date-badge">Mayo 2026</span>
+      </div>
+    </div>
+
+    <div class="event-card fade-in">
+      <div class="card-banner">📋</div>
+      <div class="card-body">
+        <h3>Próximas Iniciativas</h3>
+        <p>Presentación de propuestas ciudadanas para mejora de servicios públicos y transparencia municipal.</p>
+        <span class="date-badge">Junio 2026</span>
+      </div>
+    </div>
+
+    <div class="event-card fade-in">
+      <div class="card-banner">🤝</div>
+      <div class="card-body">
+        <h3>Únete a la Comunidad</h3>
+        <p>Sesión de bienvenida para nuevos integrantes. Conoce cómo participar activamente en el Bloque.</p>
+        <span class="date-badge">Permanente</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════ FORMULARIO DE REGISTRO ════ -->
+<section id="registro">
+  <div class="section-header fade-in">
+    <h2>Regístrate para <span>Asistir</span></h2>
+    <div class="underline"></div>
+  </div>
+  <div class="form-container fade-in">
+    <form id="registroForm" novalidate>
+      <div class="form-grid">
+
+        <div class="form-group">
+          <label for="nombre">Nombre <span class="req">*</span></label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+        </div>
+
+        <div class="form-group">
+          <label for="apellidoPaterno">Apellido Paterno <span class="req">*</span></label>
+          <input type="text" id="apellidoPaterno" name="apellidoPaterno" placeholder="Apellido paterno" required />
+        </div>
+
+        <div class="form-group">
+          <label for="apellidoMaterno">Apellido Materno</label>
+          <input type="text" id="apellidoMaterno" name="apellidoMaterno" placeholder="Apellido materno" />
+        </div>
+
+        <div class="form-group">
+          <label for="whatsapp">WhatsApp <span class="req">*</span></label>
+          <input type="tel" id="whatsapp" name="whatsapp" placeholder="+52 686 000 0000" required />
+        </div>
+
+        <div class="form-group full-width">
+          <label for="email">Correo Electrónico <span class="req">*</span></label>
+          <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required />
+        </div>
+
+        <div class="form-group full-width">
+          <label for="organizacion">Organización <span style="color:var(--gray);font-weight:400">(opcional)</span></label>
+          <input type="text" id="organizacion" name="organizacion" placeholder="Empresa, asociación, institución..." />
+        </div>
+
+        <div class="form-group full-width">
+          <label for="comentarios">Comentarios</label>
+          <textarea id="comentarios" name="comentarios" placeholder="¿Hay algo que quieras compartir o preguntar?"></textarea>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="terminos" name="terminos" required />
+          <label for="terminos">
+            Acepto los <a href="#" onclick="openTermsModal(); return false;">términos y condiciones de privacidad</a> y autorizo el uso de mis datos personales para comunicaciones del Bloque Ciudadano Mexicalense, incluyendo mensajes por WhatsApp. <span class="req">*</span>
+          </label>
+        </div>
+
+        <div class="form-message" id="formMessage"></div>
+
+        <button type="submit" class="btn-submit" id="submitBtn">Enviar Registro</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ════ TÉRMINOS Y CONDICIONES — Tarjeta con botón ════ -->
+<section id="terms">
+  <div class="section-header fade-in">
+    <h2>Privacidad y <span>Términos</span></h2>
+    <div class="underline"></div>
+  </div>
+  <div class="terms-card fade-in">
+    <div class="terms-card-icon">📋</div>
+    <div class="terms-card-body">
+      <h3>Términos y Condiciones de Privacidad y Datos</h3>
+      <p>Incluye nuestra política de tratamiento de datos personales, consentimiento para mensajes por WhatsApp y cumplimiento con la Meta WhatsApp Business API conforme a la LFPDPPP y normativas aplicables en México.</p>
+      <ul class="terms-card-tags">
+        <li>LFPDPPP</li>
+        <li>WhatsApp Business API</li>
+        <li>Derechos ARCO</li>
+        <li>Meta Platforms</li>
+      </ul>
+    </div>
+    <button class="btn-terms-open" onclick="openTermsModal()">
+      Leer Términos y Condiciones
+      <span>→</span>
+    </button>
+  </div>
+</section>
+
+<!-- ════ MODAL TÉRMINOS Y CONDICIONES ════ -->
+<div class="terms-modal-overlay" id="termsModal" onclick="closeTermsOnOverlay(event)">
+  <div class="terms-modal">
+
+    <div class="terms-modal-header">
+      <div>
+        <h2>Términos y Condiciones</h2>
+        <p>Privacidad y Datos — Bloque Ciudadano Mexicalense</p>
+      </div>
+      <button class="terms-modal-close" onclick="closeTermsModal()" aria-label="Cerrar">✕</button>
+    </div>
+
+    <div class="terms-modal-body">
+
+      <div class="alert-box yellow">
+        <strong>⚠️ Aviso Importante</strong>
+        Al registrarte, aceptas que tus datos sean utilizados para comunicaciones relacionadas con los eventos y actividades del Bloque Ciudadano Mexicalense, incluyendo notificaciones por WhatsApp.
+      </div>
+
+      <div class="alert-box blue">
+        <strong>ℹ️ Protección de tus Datos</strong>
+        Tus datos están protegidos conforme a la LFPDPPP y demás normativas aplicables en México. Nunca venderemos tu información.
+      </div>
+
+      <div class="terms-section">
+        <h3>1. Recolección y Uso de Datos Personales</h3>
+        <p>Bloque Ciudadano Mexicalense recolecta datos personales exclusivamente para los fines descritos en este documento. Los datos son tratados con responsabilidad, confidencialidad y en cumplimiento de la legislación vigente en México.</p>
+        <p>El responsable del tratamiento es <strong>Bloque Ciudadano Mexicalense</strong> — bloqueciudadanosmexicalenses@gmail.com</p>
+      </div>
+
+      <div class="terms-section">
+        <h3>2. Datos que Recolectamos</h3>
+        <ul>
+          <li>Nombre completo (nombre, apellido paterno y materno)</li>
+          <li>Número de teléfono / WhatsApp</li>
+          <li>Correo electrónico</li>
+          <li>Organización o empresa (opcional)</li>
+          <li>Comentarios adicionales (opcional)</li>
+          <li>Fecha y hora de registro</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <h3>3. Consentimiento Explícito para WhatsApp</h3>
+        <p>Al marcar la casilla de consentimiento, autorizas que te contactemos por WhatsApp para:</p>
+        <ul>
+          <li>Confirmación de tu registro al evento</li>
+          <li>Recordatorios y actualizaciones del evento</li>
+          <li>Información sobre próximos eventos y actividades ciudadanas</li>
+          <li>Noticias e iniciativas del Bloque Ciudadano Mexicalense</li>
+        </ul>
+        <p>Puedes retirar tu consentimiento enviando <strong>BAJA</strong> por WhatsApp o escribiendo a bloqueciudadanosmexicalenses@gmail.com</p>
+      </div>
+
+      <div class="terms-section">
+        <h3>4. Integración con Meta WhatsApp Business API</h3>
+        <div class="meta-api-block">
+          <div class="meta-api-header">
+            <span class="meta-logo">💬</span>
+            <div>
+              <strong>WhatsApp Business API — Política de Mensajería</strong>
+              <span>Conforme a los requisitos de Meta Platforms, Inc.</span>
+            </div>
+          </div>
+
+          <div class="meta-subsection">
+            <h4>4.1 Identidad del Negocio</h4>
+            <p>Mensajes enviados por <strong>Bloque Ciudadano Mexicalense</strong>, Mexicali, BC. Número registrado ante Meta: <strong>+52 686 309 9151</strong>.</p>
+          </div>
+
+          <div class="meta-subsection">
+            <h4>4.2 Consentimiento de Opt-In (Requerido por Meta)</h4>
+            <div class="optin-box">
+              <strong>📋 Declaración de Opt-In</strong>
+              <p>Al marcar la casilla en el formulario, el usuario otorga consentimiento <em>expreso, libre, específico e informado</em> para recibir mensajes vía Meta WhatsApp Business API, conforme a las <a href="https://www.whatsapp.com/legal/business-policy" target="_blank" rel="noopener">Políticas de WhatsApp Business</a>.</p>
+            </div>
+            <p>El opt-in se recolecta mediante:</p>
+            <ul>
+              <li>Casilla sin marcar por defecto (opt-in activo) en bloqueciudadanomxli.org</li>
+              <li>Descripción clara del tipo de mensajes antes de la aceptación</li>
+              <li>Enlace visible a estos Términos en el punto de recolección</li>
+              <li>Registro de marca de tiempo, IP y versión de términos aceptados</li>
+            </ul>
+          </div>
+
+          <div class="meta-subsection">
+            <h4>4.3 Tipos de Mensajes</h4>
+            <ul>
+              <li><strong>Utility:</strong> Confirmaciones, recordatorios, cambios o cancelaciones de evento</li>
+              <li><strong>Marketing:</strong> Próximos eventos e iniciativas — solo con consentimiento explícito</li>
+              <li><strong>Authentication:</strong> No aplica en esta etapa</li>
+            </ul>
+            <p>No enviaremos contenido político partidista, publicidad de terceros ni contenido prohibido por Meta.</p>
+          </div>
+
+          <div class="meta-subsection">
+            <h4>4.4 Frecuencia de Mensajes</h4>
+            <p>Estimado: <strong>1 a 4 mensajes por mes</strong>. Nunca entre 10:00 pm y 8:00 am (hora de Mexicali, UTC-7).</p>
+          </div>
+
+          <div class="meta-subsection">
+            <h4>4.5 Mecanismo de Opt-Out</h4>
+            <div class="optout-box">
+              <strong>🚫 Cómo darte de baja</strong>
+              <ul>
+                <li>Responder <strong>BAJA</strong>, <strong>STOP</strong> o <strong>CANCELAR</strong> a cualquier mensaje</li>
+                <li>Correo a <strong>bloqueciudadanosmexicalenses@gmail.com</strong> — asunto "Baja WhatsApp"</li>
+                <li>Llamar al +52 686 309 9151</li>
+              </ul>
+              <p>Baja procesada en máximo <strong>24 horas hábiles</strong>.</p>
+            </div>
+          </div>
+
+          <div class="meta-subsection">
+            <h4>4.6 Cumplimiento con Políticas de Meta</h4>
+            <ul>
+              <li><strong>WhatsApp Business Policy</strong> — Condiciones de uso para cuentas de empresa</li>
+              <li><strong>WhatsApp Commerce Policy</strong> — Restricciones sobre contenido comercial</li>
+              <li><strong>Meta Business Terms of Service</strong> — Términos generales de servicio empresarial</li>
+              <li><strong>Meta Privacy Policy</strong> — Metadatos de mensajes</li>
+            </ul>
+          </div>
+
+          <div class="meta-subsection">
+            <h4>4.7 Datos Procesados por Meta</h4>
+            <ul>
+              <li>Número de teléfono del destinatario</li>
+              <li>Marca de tiempo de envío y entrega</li>
+              <li>Estado del mensaje (enviado, entregado, leído)</li>
+              <li>Metadatos técnicos del dispositivo (no el contenido)</li>
+            </ul>
+            <p>Ver <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener">Política de Privacidad de WhatsApp</a>.</p>
+          </div>
+
+          <div class="meta-subsection">
+            <h4>4.8 Proveedor de Solución BSP</h4>
+            <p>El acceso a la API es gestionado por un <strong>BSP certificado por Meta</strong>, que actúa como procesador de datos bajo instrucción de Bloque Ciudadano Mexicalense.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="terms-section">
+        <h3>5. Cumplimiento Normativo</h3>
+        <ul>
+          <li><strong>LFPDPPP</strong> — Ley Federal de Protección de Datos Personales</li>
+          <li><strong>LGTLC</strong> — Ley General de Telecomunicaciones y Radiodifusión</li>
+          <li><strong>LGPDPPSO</strong> — Ley General de Protección de Datos en Sujetos Obligados</li>
+          <li>Lineamientos del <strong>INAI</strong></li>
+          <li>Políticas de <strong>Meta / WhatsApp Business API</strong></li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <h3>6. Tus Derechos ARCO</h3>
+        <ul>
+          <li><strong>Acceso:</strong> Conocer qué datos tenemos sobre ti</li>
+          <li><strong>Rectificación:</strong> Corregir datos inexactos</li>
+          <li><strong>Cancelación:</strong> Eliminar tus datos</li>
+          <li><strong>Oposición:</strong> Oponerte al tratamiento para fines específicos</li>
+        </ul>
+        <p>Escribe a <strong>bloqueciudadanosmexicalenses@gmail.com</strong> — asunto "Derechos ARCO". Respondemos en máximo 20 días hábiles.</p>
+      </div>
+
+      <div class="terms-section">
+        <h3>7. Seguridad y Almacenamiento</h3>
+        <ul>
+          <li>Almacenamiento en Google Sheets / Google Drive con acceso restringido</li>
+          <li>Autenticación de dos factores en todas las cuentas</li>
+          <li>Cifrado en tránsito mediante HTTPS/TLS</li>
+          <li>Revisión periódica de permisos y accesos</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <h3>8. Compartir con Terceros</h3>
+        <p>Bloque Ciudadano Mexicalense <strong>NO vende ni comercializa</strong> tus datos. Solo se comparten con proveedores tecnológicos operativos (Google, Meta) bajo acuerdos de confidencialidad, o por mandato legal.</p>
+      </div>
+
+      <div class="terms-section">
+        <h3>9. Cookies</h3>
+        <p>Solo cookies técnicas esenciales. No usamos rastreo publicitario de terceros.</p>
+      </div>
+
+      <div class="terms-section">
+        <h3>10. Cambios en Estos Términos</h3>
+        <p>Cambios significativos notificados con 15 días de anticipación. <em>Última actualización: Abril 2026</em></p>
+      </div>
+
+      <div class="terms-section">
+        <h3>11. Contacto</h3>
+        <ul>
+          <li>Correo: <strong>bloqueciudadanosmexicalenses@gmail.com</strong></li>
+          <li>WhatsApp: <strong>+52 686 309 9151</strong></li>
+          </ul>
+      </div>
+
+      <div class="terms-section">
+        <h3>12. Aceptación Final</h3>
+        <p>Al marcar la casilla en el formulario confirmas que has leído estos términos, tienes 18 años o más, y autorizas el contacto por WhatsApp.</p>
+      </div>
+
+    </div><!-- /terms-modal-body -->
+
+    <div class="terms-modal-footer">
+      <button class="btn-primary" onclick="closeTermsModal()">Entendido, cerrar</button>
+    </div>
+
+  </div><!-- /terms-modal -->
+</div><!-- /terms-modal-overlay -->
+
+<!-- ════ COMUNIDAD ════ -->
+<section id="comunidad">
+  <div class="section-header fade-in">
+    <h2>Únete a Nuestra <span>Comunidad</span></h2>
+    <div class="underline"></div>
+  </div>
+  <div class="comunidad-inner">
+    <div class="qr-box fade-in">
+      <img src="https://www.bloqueciudadanomxli.org/qr_bloque_watts.png" alt="Código QR WhatsApp Bloque Ciudadano" />
+      <p>Escanea para unirte al grupo de WhatsApp</p>
+    </div>
+    <div class="comunidad-text fade-in">
+      <h3>Mantente Conectado</h3>
+      <ul class="benefits-list">
+        <li><span class="check">✓</span> Recibe notificaciones de próximos eventos en tiempo real</li>
+        <li><span class="check">✓</span> Accede a materiales exclusivos y presentaciones</li>
+        <li><span class="check">✓</span> Participa en debates ciudadanos y propuestas de mejora</li>
+        <li><span class="check">✓</span> Conecta con ciudadanos comprometidos de Mexicali</li>
+        <li><span class="check">✓</span> Sé parte del cambio democrático en Baja California</li>
+        <li><span class="check">✓</span> Recibe información verificada y sin filtros políticos</li>
+      </ul>
+      <div class="contact-highlight">
+        <span>📱</span>
+        <div>
+          <strong>+52 686 309 9151</strong>
+          <small>WhatsApp del Bloque Ciudadano</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ CONTACTO ════ -->
+<section id="contacto">
+  <div class="section-header fade-in">
+    <h2>Nuestro <span>Contacto</span></h2>
+    <div class="underline"></div>
+  </div>
+  <div class="contacto-grid">
+
+    <div class="contact-card fade-in">
+      <div class="avatar">MC</div>
+      <h3>Marcela Cubillas</h3>
+      <div class="role">Directora</div>
+      <div class="contact-info">
+        <a href="mailto:Cubillasmarcela@gmail.com">Cubillasmarcela@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="contact-card fade-in">
+      <div class="avatar">AC</div>
+      <h3>Adrián Cárdenas</h3>
+      <div class="role">Coordinador</div>
+      <div class="contact-info">
+        <a href="mailto:cachiang.info@gmail.com">cachiang.info@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="contact-card fade-in">
+      <div class="avatar">BC</div>
+      <h3>Bloque Ciudadano</h3>
+      <div class="role">Contacto General</div>
+      <div class="contact-info">
+        <a href="mailto:bloqueciudadanosmexicalenses@gmail.com">bloqueciudadanosmexicalenses@gmail.com</a><br/>
+        <a href="https://wa.me/526863099151" target="_blank">+52 686 309 9151</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════ FOOTER ════ -->
+<footer>
+  <strong>🇲🇽 Bloque Ciudadano Mexicalense</strong>
+  <p>Por un Mexicali más próspero para todos</p>
+  <p class="footer-copyright">© 2026 Bloque Ciudadano Mexicalense. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Scripts — un archivo por responsabilidad -->
+<script src="js/navbar.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/form.js"></script>
+<script src="js/terms-modal.js"></script>
+
+</body>
+</html>

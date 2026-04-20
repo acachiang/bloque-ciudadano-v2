@@ -1,0 +1,81 @@
+/* ════════════════════════════════════════
+   CONTACTO — Grid de 3 tarjetas:
+   avatar, nombre, rol, info de contacto,
+   hover con sombra naranja
+   ════════════════════════════════════════ */
+
+#contacto {
+  padding: 5rem 2rem;
+  background: var(--gray-light);
+}
+
+.contacto-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.contact-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  border-top: 4px solid var(--orange);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  transition: transform 0.25s, box-shadow 0.25s;
+  text-align: center;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(255,140,0,0.2);
+}
+
+/* Avatar circular con gradiente naranja */
+.contact-card .avatar {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, var(--orange), var(--orange-dark));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 1px;
+  margin: 0 auto 1rem;
+}
+
+.contact-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--gray-dark);
+  margin-bottom: 0.3rem;
+}
+
+/* Etiqueta de rol en naranja */
+.contact-card .role {
+  font-size: 0.82rem;
+  color: var(--orange);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 1rem;
+}
+
+.contact-card .contact-info {
+  font-size: 0.9rem;
+  color: var(--gray);
+  line-height: 1.8;
+}
+
+.contact-card .contact-info a {
+  color: var(--gray);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-card .contact-info a:hover { color: var(--orange); }

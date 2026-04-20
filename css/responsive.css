@@ -1,0 +1,72 @@
+/* ════════════════════════════════════════
+   RESPONSIVE — Todos los breakpoints
+   900px → tablet  |  600px → mobile
+   ════════════════════════════════════════ */
+
+/* ── Tablet (≤ 900px) ── */
+@media (max-width: 900px) {
+
+  /* Hero: apila columnas, imagen arriba */
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-image { order: -1; }
+  .hero-image img { max-width: 320px; }
+
+  /* Evento: apila columnas */
+  .evento-grid { grid-template-columns: 1fr; }
+
+  /* Cartelera: 2 columnas en tablet */
+  .cards-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Contacto: 2 columnas */
+  .contacto-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Comunidad: apila */
+  .comunidad-inner { grid-template-columns: 1fr; }
+
+  /* Formulario: 1 columna */
+  .form-grid { grid-template-columns: 1fr; }
+  .form-group.full-width,
+  .checkbox-group,
+  .btn-submit,
+  .form-message { grid-column: auto; }
+}
+
+/* ── Mobile (≤ 600px) ── */
+@media (max-width: 600px) {
+
+  /* Navbar: mostrar hamburger, ocultar links */
+  nav { padding: 0 1rem; }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    background: var(--orange-dark);
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .nav-links.open { display: flex; }
+  .nav-links .btn-nav { margin-left: 0; text-align: center; }
+  .hamburger { display: flex; }
+
+  /* Cartelera y Contacto: 1 columna */
+  .cards-grid,
+  .contacto-grid { grid-template-columns: 1fr; }
+
+  /* Reducir padding de contenedores */
+  .form-container,
+  .terms-container { padding: 1.75rem 1.25rem; }
+
+  /* Reducir padding de secciones */
+  #inicio,
+  #evento,
+  #cartelera,
+  #registro,
+  #terms,
+  #comunidad,
+  #contacto { padding: 3.5rem 1rem; }
+}
